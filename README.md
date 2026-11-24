@@ -32,9 +32,10 @@ Every tool has a docstring and argument types, and it returns an error message i
 
 ## Model
 
-**Claude Opus 5.5** (`claude-opus-5-5`) through `langchain-anthropic`.
-I chose it because it is very good at tool calling (it picks the right tool and fills the arguments correctly)
-and it follows the rules in the system prompt, for example "never invent earthquakes".
+**Claude Haiku 5.5** (`claude-haiku-5-5`) through `langchain-anthropic`.
+I chose it because it is fast and cheap (about 10 times cheaper than Claude Opus), and it is still good at
+tool calling (it picks the right tool and fills the arguments correctly) and follows the rules in the
+system prompt, for example "never invent earthquakes". It also thinks step by step before it answers.
 
 `AgentExecutor` and `create_tool_calling_agent` are in the `langchain-classic` package in the new LangChain versions,
 so I import them from `langchain_classic.agents`.
