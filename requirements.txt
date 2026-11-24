@@ -1,0 +1,6 @@
+langchain-classic
+langchain-anthropic
+langsmith
+requests
+python-dotenv
+jupyter
